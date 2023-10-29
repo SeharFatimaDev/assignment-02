@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h2> Practice exercise 3.1 </h2>
+    <p> <b>1. Create an array to use as your shopping list with 3 items: "Milk," "Bread," and
+            "Apples."</b> <br>
+        let shoppingList = ["Milk", "Bread", "Apples"];<br>
+        <b> 2. Check your list length in the console.</b><br>
+        console.log("List Length:", shoppingList.length);<br>
+        <b>3. Update "Bread" to "Bananas."</b><br>
+        let indexOfBread = shoppingList.indexOf("Bread");
+        if (indexOfBread !== -1) {
+        shoppingList[indexOfBread] = "Bananas";
+        } <br>
+        <b> 4. Output your entire list to the console.</b><br>
+        console.log("Updated Shopping List:", shoppingList);
+    </p>
+
+    <h2>Practice exercise 3.2</h2>
+    <p> <b>1. Create an empty array to use as a shopping list.</b><br>
+        let shoppingList = [ ]; <br>
+
+        <b>2. Add Milk, Bread, and Apples to your list.</b><br>
+        shoppingList.push("Milk", "Bread", "Apples"); <br>
+
+        <b>3. Update "Bread" with Bananas and Eggs.</b><br>
+        let indexOfBread = shoppingList.indexOf("Bread");
+        if (indexOfBread !== -1) {
+        shoppingList.splice(indexOfBread, 1, "Bananas", "Eggs");
+        } <br>
+
+        <b>4. Remove the last item from the array and output it into the console.</b><br>
+        let removedItem = shoppingList.pop();
+        console.log("Removed Item:", removedItem); <br>
+
+        <b>5. Sort the list alphabetically.</b><br>
+        shoppingList.sort(); <br>
+
+
+        <b>6. Find and output the index value of Milk.</b><br>
+        let indexOfMilk = shoppingList.indexOf("Milk");
+        console.log("Index of Milk:", indexOfMilk); <br>
+
+        <b>7. After Bananas, add Carrots and Lettuce.</b><br>
+        let indexOfBananas = shoppingList.indexOf("Bananas");
+        if (indexOfBananas !== -1) {
+        shoppingList.splice(indexOfBananas + 1, 0, "Carrots", "Lettuce");
+        } <br>
+
+        <b>8. Create a new list containing Juice and Pop.</b><br>
+        var newList = ["Juice", "Pop"]; <br>
+
+        <b>9. Combine both lists, adding the new list twice to the end of the first list.</b><br>
+        shoppingList = shoppingList.concat(newList, newList); <br>
+
+        <b>10. Get the last index value of Pop and output it to the console.</b><br>
+        let lastIndexOfPop = shoppingList.lastIndexOf("Pop");
+        console.log("Last Index of Pop:", lastIndexOfPop);
+
+        <b>11. Your final list should look like this: ["Bananas", "Carrots", "Lettuce", "Eggs", "Milk", "Juice",
+            "Pop", "Juice", "Pop"] </b><br>
+        console.log("Final Shopping List:", shoppingList);
+    </p>
+
+    <h2>Practice exercise 3.3</h2>
+    <p><b>1. Create an array containing three values: 1, 2, and 3.</b><br>
+        let originalArray = [1, 2, 3];<br>
+
+        <b>2. Nest the original array into a new array three times.</b><br>
+        let nestedArray = [originalArray, originalArray, originalArray];<br>
+
+        <b>3. Output the value 2 from one of the arrays into the console.</b><br>
+        console.log("Value 2 from one of the arrays:", nestedArray[1][1]);
+    </p>
+
+    <h2>Practice exercise 3.4</h2>
+    <p> <b> 1. Create a new myCar object for a car. Add some properties, including, but not
+            limited to, make and model, and values for a typical car or your car. Feel free
+            to use booleans, strings, or numbers.</b><br>
+        let myCar = {
+        make: "Toyota",
+        model: "Camry",
+        year: 2022,
+        color: "Blue",
+        forSale: true
+        }; <br>
+
+        <b> 2. Create a variable that can hold the string value color. This variable
+            containing a string value color can now be used to reference the property
+            name within myCar. Then, use the variable within the square bracket notation
+            to assign a new value to the color property in myCar. </b><br>
+        let propertyName = "color";
+        myCar[propertyName] = "Red";<br>
+
+        <b>3. Use that same variable and assign a new property string value to it, such as
+            forSale. Use the bracket notation once again to assign a new value to the
+            forSale property to indicate whether the car is available for purchase. </b><br>
+        propertyName = "forSale";
+        myCar[propertyName] = false;<br>
+
+        <b>4. Output make and model into the console.</b><br>
+        console.log("Make:", myCar.make);
+        console.log("Model:", myCar.model);<br>
+
+        <b>5. Output the value of forSale into the console.</b><br>
+        console.log("For Sale:", myCar.forSale); <br>
+    </p>
+
+    <h2>Practice exercise 3.5</h2>
+    <p><b>1. Create an object named people that contains an empty array that is called
+            friends.</b><br>
+        let people = {
+        friends: []
+        }; <br>
+
+        <b>2. Create three variables, each containing an object, that contain one of your
+            friend's first names, last names, and an ID value.</b><br>
+        let friend1 = {
+        firstName: "John",
+        lastName: "Doe",
+        ID: 1
+        };
+
+        let friend2 = {
+        firstName: "Jane",
+        lastName: "Smith",
+        ID: 2
+        };
+
+        let friend3 = {
+        firstName: "Tom",
+        lastName: "Johnson",
+        ID: 3
+        }; <br>
+
+        <b>3. Add the three friends to the friend array.</b><br>
+        people.friends.push(friend1, friend2, friend3); <br>
+
+        <b>4. Output it to the console.</b><br>
+        console.log(people); <br>
+
+    </p>
+    <hr>
+    <hr><br>
+
+    <h2>Practice exercise 4.1</h2>
+    <p><b>1. Create a variable with a Boolean value.</b><br>
+        let myVariable = true; <br>
+
+        <b> 2. Output the value of the variable to the console.</b> <br>
+        console.log("The value of myVariable is:", myVariable); <br>
+
+        <b> 3. Check whether the variable is true and if so, output a message to the console,
+            using the following syntax:
+            if(myVariable){
+            //action
+            } </b> <br>
+        if (myVariable) {
+        console.log("myVariable is true.");
+        } <br>
+
+        <b> 4. Add another if statement with an ! in front of the variable to check whether
+            the condition is not true, and create a message that will be printed to the
+            console in that instance. You should have two if statements, one with an
+            ! and the other without. You could also use an if and an else statement
+            instead—experiment! </b> <br>
+        if (!myVariable) {
+        console.log("myVariable is not true.");
+        } else {
+        console.log("myVariable is true with the 'else' statement.");
+        } <br>
+
+        <b> 5. Change the variable to the opposite to see how the result changes.</b><br>
+        myVariable = !myVariable; <br>
+        if (myVariable) {
+        console.log("myVariable is now true.");
+        } else {
+        console.log("myVariable is now false.");
+        }
+    </p>
+
+    <h2>Practice exercise 4.2</h2>
+    <p>
+        <b>1. Create a prompt to ask the user's age </b><br>
+        const userInput = prompt("Please enter your age:");
+        <br>
+
+        <b> 2. Convert the response from the prompt to a number </b><br>
+        const userAge = parseInt(userInput); <br>
+
+        <b> 3. Declare a message variable that you will use to hold the console message for
+            the user </b><br>
+
+        let message; <br>
+
+
+        <b> 4. If the input age is equal to or greater than 21, set the message variable to
+            confirm entry to a venue and the ability to purchase alcohol </b><br>
+        if (userAge >= 21) {
+        message = "You are confirmed entry to the venue and have the ability to purchase alcohol.";
+        } <br>
+
+        <b> 5. If the input age is equal to or greater than 19, set the message variable to
+            confirm entry to the venue but deny the purchase of alcohol </b><br>
+        else if (userAge >= 19) {
+        message = "You are confirmed entry to the venue but denied the purchase of alcohol.";
+        } <br>
+
+        <b> 6. Provide a default else statement to set the message variable to deny entry if
+            none are true</b><br>
+        else {
+        message = "You are denied entry to the venue.";
+        } <br>
+
+        <b> 7. Output the response message variable to the console</b> <br>
+        console.log(message); <br>
+
+    </p>
+
+    <h2>Practice exercise 4.3</h2>
+    <p>
+        <b>1. Create a Boolean value for an ID variable</b><br>
+        const isIDValid = true; <br>
+
+        <b>2. Using a ternary operator, create a message variable that will check whether
+            their ID is valid and either allow a person into a venue or not</b><br>
+        const message = isIDValid ? "You are allowed into the venue." : "You are not allowed into the venue."; <br>
+
+        <b>3. Output the response to the console</b><br>
+        console.log(message); <br>
+    </p>
+
+</body>
+
+</html>
